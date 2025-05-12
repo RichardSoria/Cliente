@@ -6,7 +6,7 @@ import java.net.InetAddress;
 
 
 public class Cliente {
-    public String sendNumbers(String IP, int port, int numero1, int numero2, String operacion) {
+    public String sendID(String IP, int port, String ID) {
 
         String respuesta = "";
 
@@ -15,7 +15,7 @@ public class Cliente {
             InetAddress address = InetAddress.getByName(IP);
 
             // Convertir los números a cadena y enviarlos
-            String mensaje = numero1 + "," + numero2 + "," + operacion;
+            String mensaje = ID;
             byte[] buffer = mensaje.getBytes();
             DatagramPacket packet = new DatagramPacket(buffer, buffer.length, address, port);
             socket.send(packet);
