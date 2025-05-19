@@ -1,4 +1,4 @@
-package vista;
+package cliente.vista;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;

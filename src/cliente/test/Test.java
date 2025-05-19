@@ -1,6 +1,6 @@
 package cliente.test;
 
-import vista.ConsultarEstudainte;
+import cliente.vista.ConsultarEstudainte;
 
 import javax.swing.*;
 
